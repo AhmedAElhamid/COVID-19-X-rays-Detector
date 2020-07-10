@@ -94,7 +94,7 @@ model.compile(loss='categorical_crossentropy', optimizer='adam', metrics=['accur
 
 
 IMG_SIZE=224
-img_class=[]
+img_name=[]
 images=[]
 def test_images(path):
     for img in tqdm(os.listdir(path)): 
@@ -102,7 +102,7 @@ def test_images(path):
             img_array = cv2.imread(os.path.join(path,img) ,cv2.IMREAD_GRAYSCALE)
             new_array = cv2.resize(img_array, (IMG_SIZE, IMG_SIZE))  
             images.append(new_array)
-            img_class.append(img)
+            img_name.append(img)
         except Exception as e: 
             pass
         
@@ -110,11 +110,11 @@ def test_images(path):
         pred=model.predict(np.array(images[n]).reshape(1, IMG_SIZE, IMG_SIZE, 1))
         label=np.argmax(pred,axis=1)
         if label[0] == 0:
-            print(img_class[n],'COVID-19')
+            print(img_name[n],'COVID-19')
         elif label[0] == 1:
-            print(img_class[n],'Normal')
+            print(img_name[n],'Normal')
         elif label[0] == 2:
-            print(img_class[n],'Viral Pneumonia') 
+            print(img_name[n],'Viral Pneumonia') 
 
 
 # In[22]:
