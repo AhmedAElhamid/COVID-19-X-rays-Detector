@@ -1,4 +1,4 @@
-# COVID-19 X-rays Classifier
+# COVID-19 X-rays Detector
 
 ## Introduction
 
