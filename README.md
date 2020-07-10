@@ -26,8 +26,8 @@ https://www.kaggle.com/tawsifurrahman/covid19-radiography-database
 
 Lets see a sample of the data
 
-![image.png](attachment:image.png)
 
+![image](https://user-images.githubusercontent.com/42896530/87188193-adaca800-c2ee-11ea-86e2-33c10e9e2fd5.png)
 
 
 ## Usage:
@@ -42,7 +42,7 @@ I included file that explains the steps i used to prepare the data and build the
 ## Output
 this is the prediction of the sample we taken from the dataset after we trained the model
 
-![image.png](attachment:image.png)
+![image](https://user-images.githubusercontent.com/42896530/87188251-cddc6700-c2ee-11ea-930f-c979ae2a4091.png)
 
 ## Expected outcomes
 My expected outcome from this project is that it would give physicians an edge and allow them to act with more confidence while they wait for the analysis of a radiologist by having a digital second opinion confirm their assessment of a patient's condition. And also help people in resource limited environments as the x-ray imaging is the most widely available imaging technique
