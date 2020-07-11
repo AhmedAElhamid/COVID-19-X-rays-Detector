@@ -27,7 +27,7 @@ https://www.kaggle.com/tawsifurrahman/covid19-radiography-database
 Lets see a sample of the data
 
 
-![image](https://user-images.githubusercontent.com/42896530/87188193-adaca800-c2ee-11ea-86e2-33c10e9e2fd5.png)
+![image](https://user-images.githubusercontent.com/42896530/87225009-08471200-c38a-11ea-90bb-e63201a5c434.png)
 
 
 ## Usage:
@@ -37,12 +37,17 @@ the program can take any X-ray image to a patient chest and classify it to one o
 <br/>2)Viral pneumonia
 <br/>3)Normal
 
-I included file that explains the steps i used to prepare the data and build the model and also included file that is ready to use with the pretrained model you just have to change the directory to where your data is, i have choosen this model specificaly since it scores the best accuracy Which is about 95.5% and i will still try to increase it further when the dataset is updated with more cases.
+I included a tutorial that explains the steps i used to prepare the data and build the model and also included python file that is ready to use with the pretrained model you just have to change the directory to where your data is, i have choosen this model specificaly since it scores the best accuracy Which is about 97% test accuracy and exceeded 99% in training accuracy and i will still try to increase it further when the dataset is updated with more cases.
+## Model performance
+
+the model accuracy and loss for the training and the validating set. These plots show the accuracy and loss values for the epochs 1-100. Note that no random seed is specified for this notebook.
+
+![image](https://user-images.githubusercontent.com/42896530/87225002-01b89a80-c38a-11ea-871c-ce9097aef354.png)
 
 ## Output
 this is the prediction of the sample we taken from the dataset after we trained the model
 
-![image](https://user-images.githubusercontent.com/42896530/87188251-cddc6700-c2ee-11ea-930f-c979ae2a4091.png)
+![image](https://user-images.githubusercontent.com/42896530/87225013-0da45c80-c38a-11ea-9a66-67df5609e284.png)
 
 ## Expected outcomes
 My expected outcome from this project is that it would give physicians an edge and allow them to act with more confidence while they wait for the analysis of a radiologist by having a digital second opinion confirm their assessment of a patient's condition. And also help people in resource limited environments as the x-ray imaging is the most widely available imaging technique
